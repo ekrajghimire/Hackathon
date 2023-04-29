@@ -382,7 +382,7 @@ li {
 
 .search-hidden-form {
     position: absolute;
-    width: 100%;
+    width: 60%;
     z-index: 4;
     height: 100%;
     top: 0;
