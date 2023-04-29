@@ -8,25 +8,52 @@
 rel="stylesheet"
 href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 intergrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhnd0JK28anvf"
-crossorigin="anonymous"
-/>
+crossorigin="anonymous"/>
 <link rel ="stylesheet" href="style.css"/>
 </head>
 <body>
+
+<!-- Firebase -->
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyCBU0u3agQWSDTDkhlL-ID-2WPtJ6ijhdo",
+	  authDomain: "food-web-platform.firebaseapp.com",
+	  databaseURL: "https://food-web-platform-default-rtdb.firebaseio.com",
+	  projectId: "food-web-platform",
+	  storageBucket: "food-web-platform.appspot.com",
+	  messagingSenderId: "376616831651",
+	  appId: "1:376616831651:web:992ec1367cac4583710d16",
+	  measurementId: "G-NSKB3HH1Z5"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+  </script>
+
 
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
 		<form action="registration.php" method ="post">
 			<h1>Create Account</h1><br><br>
 			
-			
+			<input type="text"  name= "user"placeholder="Name"  required/>
+			<input type="email"  name= "user"placeholder="Email"  required/>
 			<input type="text"  name= "user"placeholder="Username"  required/>
 			<input type="password" name="password" placeholder="Password" required/>
 			<button tye ="submit">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="validation.php" method ="post">
+		<form action="/ksb-kitchen/index.html" method ="post">
 			<h1>Sign In</h1><br><br>
 			
 			
